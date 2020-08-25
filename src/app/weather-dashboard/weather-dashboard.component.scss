@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+  flex-flow: row wrap;
+  color: #24036a;
+
+  .weather {
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fff;
+
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(189, 191, 191, 1);
+    -moz-box-shadow: 0px 0px 7px 3px rgba(189, 191, 191, 1);
+    box-shadow: 0px 0px 7px 3px rgba(189, 191, 191, 1);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: #6200ee;
+    }
+
+    .content {
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .content-details {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.9rem;
+    }
+  }
+}

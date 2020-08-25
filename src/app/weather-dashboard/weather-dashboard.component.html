@@ -1,0 +1,20 @@
+<ng-container *ngIf="cities$ | async as cities">
+  <section class="weather" (click)="loadWeatherForecast(city)" *ngFor="let city of cities">
+    <section class="container">
+      <h2>{{ city.name }}</h2>
+      <time> {{ city.dt | date: 'fullDate' }}</time>
+      <article class="content">
+        <figure>
+          <img [src]="city.weather[0].icon" [alt]="city.weather[0].description" />
+          <figcaption>{{ city.weather[0].description }}</figcaption>
+        </figure>
+        <h2>{{ city.main.temp }} <small>degree</small></h2>
+      </article>
+      <article class="content-details">
+        <span>Max. temp {{ city.main.temp_max }} <small>degree</small> </span>
+        <span>Min. temp {{ city.main.temp_min }} <small>degree</small></span>
+        <span>Wind speed {{ city.wind.speed }}</span>
+      </article>
+    </section>
+  </section>
+</ng-container>

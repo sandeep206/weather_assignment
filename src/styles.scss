@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+p {
+  margin: 0 0 0.75em;
+}
+
+h1:last-of-type,
+h2:last-of-type,
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.15;
+}
+
+h2 {
+  font-weight: 300;
+  line-height: 1.15;
+  font-size: 1.5rem;
+  small {
+    font-size: 0.6rem;
+  }
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+footer {
+  text-align: center;
+}

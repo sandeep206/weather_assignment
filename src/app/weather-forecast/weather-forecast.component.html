@@ -1,0 +1,20 @@
+<ng-container *ngIf="forecast$ | async as weatherForecast">
+  <h1>{{ weatherForecast.city.name }}</h1>
+  <section class="wrapper">
+    <article class="container" *ngFor="let forecast of weatherForecast.list">
+      <h2>{{ forecast.dt_txt | date: 'shortTime' }}</h2>
+      <article class="content">
+        <article class="content-figure" style="text-align: center">
+          <img [src]="forecast.weather[0].icon" alt="forecast.weather[0].description" />
+          <span>{{ forecast.weather[0].description }}</span>
+          <span> {{ forecast.main.temp }} </span>
+        </article>
+        <article class="content-details">
+          <span>min. temp {{ forecast.main.temp_min }} </span>
+          <span>max. temp {{ forecast.main.temp_max }} </span>
+          <span>wind speed {{ forecast.wind.speed }}</span>
+        </article>
+      </article>
+    </article>
+  </section>
+</ng-container>

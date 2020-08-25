@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": 145.77,
+    "lat": -16.92
+  },
+  "weather": [
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 292.08,
+    "pressure": 1016,
+    "humidity": 77,
+    "temp_min": 292.04,
+    "temp_max": 292.15
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 1.02,
+    "deg": 165.079
+  },
+  "clouds": {
+    "all": 90
+  },
+  "dt": 1565447764,
+  "sys": {
+    "type": 1,
+    "id": 9490,
+    "message": 0.0081,
+    "country": "AU",
+    "sunrise": 1565469481,
+    "sunset": 1565510796
+  },
+  "timezone": 36000,
+  "id": 2172797,
+  "name": "Cairns",
+  "cod": 200
+}
